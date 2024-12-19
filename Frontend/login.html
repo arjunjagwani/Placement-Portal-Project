@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Placify</title>
+    <link rel="stylesheet" href="/assests/css/login.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script> <!-- Google OAuth Library -->
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login to Placify</h2>
+            <p>Login with your Google account or create a new one to get started.</p>
+            <div id="googleSignInButton"></div> <!-- Google Sign-In Button -->
+            <div class="divider"><span>or</span></div>
+            <button class="guest-btn" onclick="continueAsGuest()">Continue as Guest</button>
+        </div>
+    </div>
+
+    <script src="/js/login.js"></script>
+</body>
+</html>

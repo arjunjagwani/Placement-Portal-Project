@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Test</title>
+    <link rel="stylesheet" href="./cssfile/mocktest.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Placify</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">All Companies</a></li>
+                <li><a href="#">Aptitude</a></li>
+                <li><a href="./mockdashboard.html">Mock Test</a></li>
+                
+                
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Signup</button>
+            
+           
+        </div>
+    </header>
+    <!-- Dynamic Heading -->
+    <h1 id="dynamic-heading">Mock Test</h1>
+
+    <!-- Mock Test Container -->
+    <div class="mock-test-container">
+        <div class="question-container">
+            <p id="question">1. What is the capital of France?</p>
+            <ul class="options">
+                <li><input type="radio" name="q1" value="A" id="option1"> <label for="option1">A. Paris</label></li>
+                <li><input type="radio" name="q1" value="B" id="option2"> <label for="option2">B. Rome</label></li>
+                <li><input type="radio" name="q1" value="C" id="option3"> <label for="option3">C. Madrid</label></li>
+                <li><input type="radio" name="q1" value="D" id="option4"> <label for="option4">D. Berlin</label></li>
+            </ul>
+        </div>
+        <button id="next-question-btn">Next Question</button>
+        <p id="timer">Time Remaining: <span id="time">30</span> seconds</p>
+    </div>
+
+    <!-- Result Section -->
+    <div class="result-container" style="display: none;">
+        <h2>Your Result</h2>
+        <p id="score"></p>
+    </div>
+
+    <script src="./jsfile/script.js"></script>
+</body>
+</html>
