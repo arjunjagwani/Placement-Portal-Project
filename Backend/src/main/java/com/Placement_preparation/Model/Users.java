@@ -8,11 +8,14 @@ import jakarta.persistence.Id;
 public class Users {
 
     @Id
-    private Long userId;
+    private Long id;
     private String username;
     private String email;
 
+    public Users() {
+    }
+
     public Users(Long userId) {
-        userId=this.userId;
+        userId=this.id;
     }
 }

@@ -1,14 +1,22 @@
 package com.Placement_preparation.Model;
 
+
 import jakarta.persistence.*;
 
 
 @Entity
 public class Response {
 
+
+
     @Id
-    @GeneratedValue
-    private Long responseId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+//    private Long user_id;
+//    private Long question_Id;
+    private String user_answer;
+
+    private boolean is_correct;
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
@@ -18,17 +26,13 @@ public class Response {
     @JoinColumn(name = "question_id", nullable = false)
     private Questions question;
 
-    private String userAnswer;
-
-    private boolean correct;
-
     // Getters and Setters
-    public Long getResponseId() {
-        return responseId;
+    public Long getId() {
+        return id;
     }
 
-    public void setResponseId(Long responseId) {
-        this.responseId = responseId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Users getUser() {
@@ -47,19 +51,19 @@ public class Response {
         this.question = question;
     }
 
-    public String getUserAnswer() {
-        return userAnswer;
+    public String getUser_answer() {
+        return user_answer;
     }
 
-    public void setUserAnswer(String userAnswer) {
-        this.userAnswer = userAnswer;
+    public void setUser_answer(String user_answer) {
+        this.user_answer = user_answer;
     }
 
-    public boolean isCorrect() {
-        return correct;
+    public boolean isIs_correct() {
+        return is_correct;
     }
 
-    public void setCorrect(boolean correct) {
-        this.correct = correct;
+    public void setIs_correct(boolean is_correct) {
+        this.is_correct = is_correct;
     }
 }

@@ -2,27 +2,28 @@ package com.Placement_preparation.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Transient;
 
 @Entity
 public class Questions {
 
     @Id
-    private Long questionId;
+    private Long id;
     private String questionText;
     private String option_1;
     private String option_2;
     private String option_3;
     private String option_4;
     private String correctAnswer;
-    private int marks; // Added a marks field to store the question's marks.
+    @Transient private int marks; // Added a marks field to store the question's marks.
 
     // Getters and Setters
-    public Long getQuestionId() {
-        return questionId;
+    public Long getId() {
+        return id;
     }
 
-    public void setQuestionId(Long questionId) {
-        this.questionId = questionId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getQuestionText() {
@@ -73,9 +74,11 @@ public class Questions {
         this.correctAnswer = correctAnswer;
     }
 
+    
     public int getMarks() {
-        return marks;
+        return 1;
     }
+
 
     public void setMarks(int marks) {
         this.marks = marks;
