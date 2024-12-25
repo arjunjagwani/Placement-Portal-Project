@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Test Score</title>
+    <link rel="stylesheet" href="/assests/css/style.css"> <!-- Add your CSS file path -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Placify</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mocktest.html">Mock Tests</a></li>
+                <li><a href="companies.html">Companies</a></li>
+            </ul>
+        </nav>
+        <div class="header-buttons" id="user-info" style="display:none;">
+            <div id="user-photo-container">
+                <img id="user-photo" src="" alt="User Photo" style="width: 30px; height: 30px; border-radius: 50%;">
+            </div>
+            <span id="user-name"></span>
+            <button id="logout-button">Logout</button>
+        </div>
+        <div class="header-buttons" id="guest-buttons" style="display:block;">
+            <a href="login.html"><button class="login-btn">Login</button></a>
+            <a href="signup.html"><button class="signup-btn">Signup</button></a>
+        </div>
+    </header>
+
+    <section class="score-section">
+        <h2>Congratulations!</h2>
+        <p>Your Score: <span id="score"></span></p>
+        <button onclick="window.location.href='mockdashboard.html'">Try Another Test</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Placify. All rights reserved.</p>
+    </footer>
+</body>
+<script src="/js/score.js"></script>
+<script src="/js/script.js"></script>
+</html>

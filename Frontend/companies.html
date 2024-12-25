@@ -14,14 +14,21 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">All Companies</a></li>
-                <li><a href="#">Aptitude</a></li>
-                <li><a href="#">Mock Test</a></li>
+                <li><a href="companies.html">All Companies</a></li>
+                <li><a href="mockdashboard.html">Aptitude</a></li>
+                <li><a href="mockdashboard.html">Mock Test</a></li>
             </ul>
         </nav>
-        <div class="header-buttons">
-            <button class="login-btn">Login</button>
-            <button class="signup-btn">Signup</button>
+        <div class="header-buttons" id="user-info" style="display:none;">
+            <div id="user-photo-container">
+                <img id="user-photo" src="" alt="User Photo" style="width: 30px; height: 30px; border-radius: 50%;">
+            </div>
+            <span id="user-name"></span>
+            <button id="logout-button">Logout</button>
+        </div>
+        <div class="header-buttons" id="guest-buttons" style="display:block;">
+            <a href="login.html"><button class="login-btn">Login</button></a>
+            <a href="signup.html"><button class="signup-btn">Signup</button></a>
         </div>
     </header>
 
@@ -30,17 +37,16 @@
         <ul>
             <li><a href="accenture.html" >Accenture</a></li>
             <li><a href="tcs.html" >TCS</a></li>
-            <li><a href="https://www.microsoft.com" target="_blank">Microsoft</a></li>
-            <li><a href="https://www.amazon.com" target="_blank">Amazon</a></li>
-            <li><a href="https://www.google.com" target="_blank">Google</a></li>
-            <li><a href="https://www.infosys.com" target="_blank">Infosys</a></li>
-            <li><a href="https://www.techmahindra.com" target="_blank">Tech Mahindra</a></li>
-            <li><a href="https://www.adani.com" target="_blank">Adani</a></li>
-            <li><a href="https://www.adobe.com" target="_blank">Adobe</a></li>
-            <li><a href="https://www.amdocs.com" target="_blank">Amdocs</a></li>
-            <li><a href="https://www.capgemini.com" target="_blank">Capgemini</a></li>
-            <li><a href="https://www.wipro.com" target="_blank">Wipro</a></li>
-            <li><a href="https://www.cognizant.com" target="_blank">Cognizant</a></li>
+            <li><a href="microsoft.html">Microsoft</a></li>
+            <li><a href="amazon.html" >Amazon</a></li>
+            <li><a href="google.html">Google</a></li>
+            <li><a href="infosys.html" >Infosys</a></li>
+            <li><a href="tech-mahindra.html" >Tech Mahindra</a></li>
+            <li><a href="adani.html" >Adani</a></li>
+            <li><a href="adobe.html" >Adobe</a></li>
+            <li><a href="capgemini.html" >Capgemini</a></li>
+            <li><a href="wipro.html" >Wipro</a></li>
+            <li><a href="cognizant.html" >Cognizant</a></li>
         </ul>
     </section>
 

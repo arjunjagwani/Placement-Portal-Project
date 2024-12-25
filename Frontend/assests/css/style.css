@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -117,7 +118,11 @@ nav a {
     justify-content: space-between;
     gap: 20px;
 }
-
+main {
+    flex: 1; /* This ensures the main content takes up the remaining space */
+    display: flex;
+    flex-direction: column;
+}
 .path-box {
     flex: 1;
     padding: 100px;
@@ -370,6 +375,21 @@ footer {
     margin-bottom: 5px;
 }
 
+.company-details {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.company-section h3 {
+    color: #00c368;
+    margin-bottom: 15px;
+}
+
+.company-section p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
 
 /* Mock Test Container */
 .mocktest-container {
@@ -413,3 +433,270 @@ footer {
     align-items: center;
     margin-top: 5%;
   }
+  nav a:hover {
+    color: #00c368;
+    text-decoration: underline;
+}
+.company-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.company-overview {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+
+}
+.company-overview h3{
+    color: #00c368;
+    font-size: 24px;
+}
+
+/* General Styles for Smaller Devices */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .header-buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .login-btn, .signup-btn {
+        width: 100%;
+    }
+
+    /* Main Banner Adjustments */
+    .main-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .banner-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-text h2 {
+        font-size: 28px;
+    }
+
+    .banner-text p {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* Learning Path Section */
+    .path-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .path-box {
+        padding: 20px;
+    }
+
+    /* Footer Adjustments */
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-section {
+        padding: 10px 0;
+    }
+}
+
+/* Extra Small Devices (Mobile Phones, 480px and below) */
+@media (max-width: 480px) {
+    /* Header adjustments */
+    header {
+        padding: 10px;
+    }
+
+    .logo h1 {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* Main Banner Adjustments */
+    .banner-text h2 {
+        font-size: 24px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+    }
+
+    /* Learning Path Section */
+    .path-box {
+        padding: 15px;
+    }
+
+    /* Companies Section */
+    .companies-list ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .companies-list li {
+        font-size: 16px;
+    }
+
+    /* Footer Adjustments */
+    .footer-section h3 {
+        font-size: 16px;
+    }
+
+    .footer-section ul li {
+        font-size: 14px;
+    }
+
+    .social-links img {
+        width: 20px;
+    }
+}
+
+/* Medium Devices (Tablets, 992px and below) */
+@media (max-width: 992px) {
+    .mocktest-container {
+        width: 80%;
+    }
+
+    .company-details {
+        max-width: 100%;
+    }
+
+    .company-overview {
+        padding: 15px;
+    }
+
+    .mocktest-option h2 {
+        font-size: 1.2em;
+    }
+
+    .mocktest-option p {
+        font-size: 0.9em;
+    }
+
+    /* Footer */
+    .footer-container {
+        padding: 10px;
+    }
+}
+/* User Info Container */
+#user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative; /* Needed for dropdown positioning */
+}
+
+/* User Photo */
+#user-photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #00c368;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* User Name */
+#user-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Dropdown Menu */
+#logout-button {
+    background-color: #00c368;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#logout-button:hover{
+    background-color: #008f4e;
+}
+
+#logout-dropdown button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+#logout-dropdown button:hover {
+    background-color: #f9f9f9;
+}
+
+/* Hover Interaction for Dropdown */
+#user-info:hover #logout-dropdown {
+    display: block;
+}
+
+.score-section {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.score-section h2 {
+    font-size: 28px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.score-section p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.score-section button {
+    background-color: #00c368;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    
+}

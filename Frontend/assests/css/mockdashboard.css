@@ -23,7 +23,9 @@ body {
 
 
 /* Mock Test Container */
+
 .mocktest-container {
+  
   display: flex;
   flex-direction: column; 
   gap: 20px;
@@ -33,6 +35,7 @@ body {
 
 /* Mock Test Option */
 .mocktest-option {
+  
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -44,7 +47,7 @@ body {
 
 .mocktest-option h2 {
   font-size: 1.5em;
-  color: #4caf50;
+  color: #00c368;
   margin-bottom: 10px;
 }
 
@@ -64,3 +67,5 @@ body {
   align-items: center;
   margin-top: 5%;
 }
+
+

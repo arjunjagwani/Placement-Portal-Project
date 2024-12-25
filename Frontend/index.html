@@ -15,17 +15,22 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="companies.html"c>All Companies</a></li>
-                <li><a href="#">Aptitude</a></li>
+                <li><a href="mockdashboard.html">Aptitude</a></li>
                 <li><a href="mockdashboard.html">Mock Test</a></li>
                 
                 
             </ul>
         </nav>
-        <div class="header-buttons">
+        <div class="header-buttons" id="user-info" style="display:none;">
+            <div id="user-photo-container">
+                <img id="user-photo" src="" alt="User Photo" style="width: 30px; height: 30px; border-radius: 50%;">
+            </div>
+            <span id="user-name"></span>
+            <button id="logout-button">Logout</button>
+        </div>
+        <div class="header-buttons" id="guest-buttons" style="display:block;">
             <a href="login.html"><button class="login-btn">Login</button></a>
             <a href="signup.html"><button class="signup-btn">Signup</button></a>
-            
-           
         </div>
     </header>
 
@@ -99,7 +104,7 @@
     </footer>
     
     
-
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="/js/script.js"></script>
 </body>
 </html>

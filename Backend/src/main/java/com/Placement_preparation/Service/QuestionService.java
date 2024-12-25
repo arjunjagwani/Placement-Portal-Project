@@ -14,8 +14,9 @@ public class QuestionService {
     @Autowired
     private QuestionRepository questionRepository;
     public List<Questions> getRandomQuestions(int limit) {
-        List<Questions> allQuestions = questionRepository.findAll();
-        Collections.shuffle(allQuestions); // Shuffle the list randomly
-        return allQuestions.stream().limit(limit).toList();
+//        List<Questions> allQuestions = questionRepository.findAll();
+//        Collections.shuffle(allQuestions); // Shuffle the list randomly
+//        return allQuestions.stream().limit(limit).toList();
+        return questionRepository.findRandomQuestions(limit);
     }
 }
