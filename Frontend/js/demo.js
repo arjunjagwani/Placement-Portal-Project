@@ -125,7 +125,10 @@ async function submitTest() {
     const data = await response.json();
     localStorage.setItem("mockTestScore", data);
     window.location.href = "score.html";
-    alert('Your score is: ' + data); // Show score to the user
+    alert('Your score is: ' + data); 
+    console.log(data);
+    
+    // Show score to the user
   } catch (error) {
     console.error('Error submitting test:', error);
   }
